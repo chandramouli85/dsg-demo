@@ -18,6 +18,12 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Log In To Azure
+        uses: Azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          enable-AzPSSession: true
+        
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
