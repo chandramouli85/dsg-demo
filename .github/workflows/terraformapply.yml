@@ -1,4 +1,4 @@
-name: CIname: Terraform Apply
+name: Terraform Apply
 
 on:
   push:
